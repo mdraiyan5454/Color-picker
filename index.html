@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colors picker</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="container">
+        <h3>Color Picker</h1>
+
+            <div class="cont1">
+            <label class="colors">Color<span class="coma">:</span></label>
+            <input type="color" id="color">
+            <br>
+            <label class="coding">Hex Code<span class="coma2">:</span></label>
+            <input type="text" id="hex" readonly="readonly">
+        </div>
+   
+
+    <div class="font-size">
+        <label class="fs">Font-Size:</label>
+        <input type="range" id="theRange" min="0" max="100" value="0" oninput="document.getElementById('fontsize').innerHTML = this.value + 'px'; changeFontSize(this.value);">
+        <span id="fontsize">0px</span>
+    </div>
+   
+    <div class="notepad">
+        <textarea  id="txt"  rows="10" cols="30" placeholder="Enter your Notes"></textarea>
+    </div>
+</div>
+</body>
+<script src="main.js"></script>
+</html>
